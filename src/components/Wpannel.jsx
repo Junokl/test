@@ -9,7 +9,7 @@ class Wpannel extends React.Component{
         }
     }
     getdata(){
-        React.axios.get('../jsons/index.json')//../Jsons/index.json
+        React.axios.get('./jsons/index.json')//../Jsons/index.json
         .then( (res)=>{
             this.setState({
                 cards:res.data.data.cards
